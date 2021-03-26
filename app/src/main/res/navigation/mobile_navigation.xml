@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.corona.ui.home.HomeFragment"
+        android:label="코로나 현황"
+        android:layout_gravity="center"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.example.corona.ui.dashboard.DashboardFragment"
+        android:label="자가진단"
+
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="com.example.corona.ui.notifications.NotificationsFragment"
+        android:label="감염병 위기경보단계"
+        tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_sym"
+        android:name="com.example.corona.ui.sym.SymFragment"
+        android:label="국민 행동수칙"
+        tools:layout="@layout/fragment_sym"/>
+</navigation>

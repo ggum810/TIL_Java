@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/sym"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/titles1"/>
+
+<!--    <Button-->
+<!--        android:id="@+id/sym2"-->
+<!--        android:layout_width="170dp"-->
+<!--        android:layout_height="100px"-->
+<!--        android:layout_marginTop="3dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginRight="15dp"-->
+<!--        android:adjustViewBounds="true"-->
+<!--        android:layout_below="@+id/sym"-->
+<!--        android:background="@drawable/symbutton"/>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/sym3"-->
+<!--        android:layout_width="170dp"-->
+<!--        android:layout_height="100px"-->
+<!--        android:layout_marginTop="3dp"-->
+<!--        android:layout_marginLeft="15dp"-->
+<!--        android:layout_marginRight="15dp"-->
+<!--        android:adjustViewBounds="true"-->
+<!--        android:layout_below="@+id/sym"-->
+<!--        android:layout_toRightOf="@+id/sym2"-->
+<!--        android:background="@drawable/symbutton2"/>-->
+
+    <ImageView
+        android:id="@+id/sym4"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/syms1"
+        android:layout_below="@id/sym">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/sym5"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/syms2"
+        android:layout_below="@id/sym4">
+    </ImageView>
+
+        <Button
+            android:id="@+id/sym6"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/sym5"
+            android:layout_centerHorizontal="true"
+            android:adjustViewBounds="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:gravity="center"
+            android:background="@drawable/qna"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/sym6">
+        </Space>
+
+    </RelativeLayout>
+</ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml  version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/diagnosis"
+                android:layout_width="175dp"
+                android:layout_height="230dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="25dp"
+
+                android:background="@drawable/dia1"
+                android:gravity="center"
+                android:adjustViewBounds="true"
+                android:src="@drawable/dia1" />
+
+            <Button
+                android:id="@+id/diagnosis2"
+                android:layout_width="175dp"
+                android:layout_height="230dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/dia2"
+                android:adjustViewBounds="true"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/calender"
+                android:layout_width="175dp"
+                android:layout_height="230dp"
+                android:layout_below="@+id/diagnosis"
+                android:layout_alignParentLeft="true"
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="true"
+                android:layout_margin="25dp"
+                android:gravity="center"
+                android:onClick="cal"
+                android:background="@drawable/dia3"/>
+
+            <Button
+                android:id="@+id/diagnosis4"
+                android:layout_width="175dp"
+                android:layout_height="230dp"
+                android:layout_below="@+id/diagnosis"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="true"
+                android:layout_margin="25dp"
+                android:gravity="center"
+                android:background="@drawable/dia4" />
+
+            <Button
+                android:id="@+id/diagnosis5"
+                android:layout_width="360dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/diagnosis4"
+                android:layout_centerHorizontal="true"
+                android:adjustViewBounds="true"
+                android:layout_margin="25dp"
+                android:gravity="center"
+                android:background="@drawable/dia5" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/diagnosis5" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

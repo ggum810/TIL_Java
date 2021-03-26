@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/jamok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:textSize="20dp"
+                android:text="코로나바이러스 감염증-19"></TextView>
+
+
+        <TextView
+            android:id="@+id/result"
+            android:text="국내 현황 "
+            android:textColor="@android:color/black"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_below="@+id/jamok"
+            android:layout_width="fill_parent"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="4dp"
+            android:layout_height="wrap_content"
+            />
+
+            <TextView
+                android:id="@+id/result0"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="#002266"
+                android:layout_below="@id/result"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <View
+                android:id="@+id/linebase1"
+                android:layout_width="380dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/result0"
+                android:layout_height="1dp"
+                android:layout_marginBottom="15dp"
+                android:background="#D9D9D9" />
+
+            <TextView
+                android:id="@+id/list1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="확진환자"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="40dp"
+                android:layout_below="@id/linebase1"
+                android:textColor="@android:color/holo_red_light">
+            </TextView>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="135dp"
+                android:layout_below="@+id/linebase1"
+                android:background="#D9D9D9"/>
+
+        <TextView
+            android:id="@+id/result2"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_light"
+            android:layout_below="@id/list1"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="28dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+            <TextView
+                android:id="@+id/lists1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_centerVertical="true"
+                android:layout_below="@id/result2"
+                android:layout_marginStart="45dp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/list2"
+                android:text="격리중"
+                android:textStyle="bold"
+                android:textColor="#F2CB61"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/linebase1"
+                android:layout_centerHorizontal="true"></TextView>
+
+            <TextView
+                android:id="@+id/result3"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="#F2CB61"
+                android:layout_below="@id/list2"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <View
+                android:id="@+id/linebase2.5"
+                android:layout_width="1dp"
+                android:layout_height="90dp"
+                android:layout_marginStart="275dp"
+                android:layout_below="@+id/linebase1"
+                android:background="#D9D9D9"/>
+
+            <TextView
+                android:id="@+id/list3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linebase1"
+                android:layout_marginLeft="95dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/list2"
+                android:text="격리해제"
+                android:textColor="#0054FF"></TextView>
+
+            <TextView
+                android:id="@+id/result4"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="#0054FF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="305dp"
+                android:layout_below="@+id/list3"></TextView>
+
+            <View
+                android:id="@+id/linebase2"
+                android:layout_width="380dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/linebase2.5"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="#D9D9D9" />
+
+
+            <Button
+                android:id="@+id/list4"
+                android:text="사망자"
+                android:layout_marginTop="40dp"
+                android:background="#EAEAEA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="55dp"
+                android:layout_below="@+id/lists1"></Button>
+
+            <Button
+                android:id="@+id/result5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#EAEAEA"
+                android:textStyle="bold"
+                android:layout_below="@+id/list4"
+                android:layout_marginStart="55dp">
+            </Button>
+
+            <Button
+                android:id="@+id/list5"
+                android:text="국내 발생"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_marginTop="40dp"
+                android:background="#EAEAEA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/lists1"
+                android:layout_centerHorizontal="true">
+            </Button>
+
+            <Button
+                android:id="@+id/result6"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#EAEAEA"
+                android:textStyle="bold"
+                android:layout_below="@+id/list4"
+                android:layout_centerHorizontal="true">
+            </Button>
+
+            <Button
+                android:id="@+id/list6"
+                android:text="해외유입"
+                android:textColor="#8041D9"
+                android:layout_marginTop="40dp"
+                android:background="#EAEAEA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="270dp"
+                android:layout_below="@+id/lists1"></Button>
+
+            <Button
+                android:id="@+id/result7"
+                android:textColor="#8041D9"
+                android:background="#EAEAEA"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="270dp"
+                android:layout_below="@+id/list6"></Button>
+
+            <Button
+                android:id="@+id/areabutton"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/result7"
+                android:layout_marginTop="30dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/areabutton"
+                android:layout_centerHorizontal="true"></Button>
+
+            <Button
+                android:id="@+id/agebutton"
+                android:layout_width="350dp"
+                android:layout_height="56dp"
+                android:layout_below="@id/areabutton"
+                android:layout_marginTop="20dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/agebutton"
+                android:layout_centerHorizontal="true"></Button>
+
+            <Button
+                android:id="@+id/sexbutton"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/agebutton"
+                android:layout_marginTop="20dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/sexbutton"
+                android:layout_centerHorizontal="true"></Button>
+
+
+            <Button
+                android:id="@+id/webView6"
+                android:layout_width="350dp"
+                android:layout_height="45dp"
+                android:layout_below="@id/sexbutton"
+                android:layout_marginTop="20dp"
+                android:adjustViewBounds="true"
+                android:background="@drawable/webview4"
+                android:layout_centerHorizontal="true"></Button>
+
+            <Button
+                android:id="@+id/sym2"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_below="@id/webView6"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="31dp"
+                android:background="@drawable/stress1">
+            </Button>
+
+            <Button
+                android:id="@+id/sym3"
+                android:layout_width="150dp"
+                android:layout_height="200dp"
+                android:layout_below="@id/webView6"
+                android:adjustViewBounds="true"
+                android:layout_marginTop="50dp"
+                android:layout_marginStart="231dp"
+                android:background="@drawable/stress2">
+            </Button>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_below="@id/sym2" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,800 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.github.mikephil.charting.charts.BarChart
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_margin="10dp"
+                android:id="@+id/bargraph"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/linebase10">
+            </com.github.mikephil.charting.charts.BarChart>
+
+
+
+
+            <TextView
+                android:id="@+id/age1"
+                android:text="연령별 현황 "
+                android:textColor="@android:color/black"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+
+                android:layout_width="fill_parent"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="15dp"
+                android:layout_height="wrap_content"
+                />
+
+            <TextView
+                android:id="@+id/result16"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="#002266"
+                android:layout_below="@id/age1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <View
+                android:id="@+id/linebase10"
+                android:layout_width="380dp"
+                android:layout_below="@id/result16"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_height="1.0dp"
+                android:background="#D9D9D9" />
+
+            <View
+                android:id="@+id/linebase11"
+                android:layout_width="380dp"
+                android:layout_below="@id/bargraph"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_height="1.0dp"
+                android:background="#D9D9D9" />
+
+
+            <TextView
+                android:id="@+id/textj11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linebase11"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="60dp"
+                android:textSize="20dp"
+
+                android:textStyle="bold"
+                android:text="나이">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/result17"
+                android:textSize="25dp"
+                android:textColor="#088A08"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="45dp"
+                android:layout_below="@+id/textj11"
+                android:textStyle="bold"></TextView>
+
+
+            <TextView
+                android:id="@+id/textj12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linebase11"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="확진자">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/result18"
+                android:textSize="25dp"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/textj12"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"></TextView>
+
+
+            <TextView
+                android:id="@+id/textj14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linebase11"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="310dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="사망자">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/result20"
+                android:textSize="25dp"
+                android:textColor="#0054FF"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="317dp"
+                android:layout_below="@+id/textj14"
+                android:textStyle="bold"></TextView>
+
+            <View
+                android:id="@+id/linebase12"
+                android:layout_width="380dp"
+                android:layout_below="@id/result20"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_height="1.0dp"
+                android:background="#D9D9D9" />
+
+            <TextView
+                android:id="@+id/textj15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linebase12"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="60dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="나이">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/result21"
+                android:textSize="25dp"
+                android:textColor="#088A08"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="32dp"
+                android:layout_below="@+id/textj15"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/textj16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linebase12"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="확진자">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/result22"
+                android:textSize="25dp"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/textj16"
+                android:textStyle="bold"></TextView>
+
+
+            <TextView
+                android:id="@+id/textj17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linebase12"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="310dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="사망자">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/result23"
+                android:textSize="25dp"
+                android:textColor="#0054FF"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="317dp"
+                android:layout_below="@+id/textj17"
+                android:textStyle="bold"></TextView>
+
+            <View
+                android:id="@+id/linebase13"
+                android:layout_width="380dp"
+                android:layout_below="@id/result23"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_height="1.0dp"
+                android:background="#D9D9D9" />
+
+            <TextView
+                android:id="@+id/textj18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linebase13"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="60dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="나이">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/result24"
+                android:textSize="25dp"
+                android:textColor="#088A08"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="32dp"
+                android:layout_below="@+id/textj18"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/textj19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linebase13"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="확진자">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/result25"
+                android:textSize="25dp"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/textj20"
+                android:textStyle="bold"></TextView>
+
+
+            <TextView
+                android:id="@+id/textj20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linebase13"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="310dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="사망자">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/result26"
+                android:textSize="25dp"
+                android:textColor="#0054FF"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="317dp"
+                android:layout_below="@+id/textj20"
+                android:textStyle="bold"></TextView>
+
+
+            <View
+                android:id="@+id/linebase14"
+                android:layout_width="380dp"
+                android:layout_below="@id/result26"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_height="1.0dp"
+                android:background="#D9D9D9" />
+
+            <TextView
+                android:id="@+id/textj21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linebase14"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="60dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="나이">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/result27"
+                android:textSize="25dp"
+                android:textColor="#088A08"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="32dp"
+                android:layout_below="@+id/textj21"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/textj22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linebase14"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="확진자">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/result28"
+                android:textSize="25dp"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/textj22"
+                android:textStyle="bold"></TextView>
+
+
+            <TextView
+                android:id="@+id/textj23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linebase14"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="310dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="사망자">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/result29"
+                android:textSize="25dp"
+                android:textColor="#0054FF"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="317dp"
+                android:layout_below="@+id/textj23"
+                android:textStyle="bold"></TextView>
+
+            <View
+                android:id="@+id/linebase15"
+                android:layout_width="380dp"
+                android:layout_below="@id/result29"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_height="1.0dp"
+                android:background="#D9D9D9" />
+
+            <TextView
+                android:id="@+id/textj24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linebase15"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="60dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="나이">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/result30"
+                android:textSize="25dp"
+                android:textColor="#088A08"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="32dp"
+                android:layout_below="@+id/textj24"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/textj25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linebase15"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="확진자">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/result31"
+                android:textSize="25dp"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/textj25"
+                android:textStyle="bold"></TextView>
+
+
+            <TextView
+                android:id="@+id/textj26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linebase15"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="310dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="사망자">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/result32"
+                android:textSize="25dp"
+                android:textColor="#0054FF"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="317dp"
+                android:layout_below="@+id/textj26"
+                android:textStyle="bold"></TextView>
+
+            <View
+                android:id="@+id/linebase16"
+                android:layout_width="380dp"
+                android:layout_below="@id/result32"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_height="1.0dp"
+                android:background="#D9D9D9" />
+
+            <TextView
+                android:id="@+id/textj27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linebase16"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="60dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="나이">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/result33"
+                android:textSize="25dp"
+                android:textColor="#088A08"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="32dp"
+                android:layout_below="@+id/textj27"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/textj28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linebase16"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="확진자">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/result34"
+                android:textSize="25dp"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/textj28"
+                android:textStyle="bold"></TextView>
+
+
+            <TextView
+                android:id="@+id/textj29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linebase16"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="310dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="사망자">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/result35"
+                android:textSize="25dp"
+                android:textColor="#0054FF"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="313dp"
+                android:layout_below="@+id/textj29"
+                android:textStyle="bold"></TextView>
+
+            <View
+                android:id="@+id/linebase17"
+                android:layout_width="380dp"
+                android:layout_below="@id/result35"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_height="1.0dp"
+                android:background="#D9D9D9" />
+
+            <TextView
+                android:id="@+id/textj30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linebase17"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="60dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="나이">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/result36"
+                android:textSize="25dp"
+                android:textColor="#088A08"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="32dp"
+                android:layout_below="@+id/textj30"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/textj31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linebase17"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="확진자">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/result37"
+                android:textSize="25dp"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/textj31"
+                android:textStyle="bold"></TextView>
+
+
+            <TextView
+                android:id="@+id/textj32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linebase17"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="310dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="사망자">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/result38"
+                android:textSize="25dp"
+                android:textColor="#0054FF"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="313dp"
+                android:layout_below="@+id/textj32"
+                android:textStyle="bold"></TextView>
+
+            <View
+                android:id="@+id/linebase18"
+                android:layout_width="380dp"
+                android:layout_below="@id/result38"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_height="1.0dp"
+                android:background="#D9D9D9" />
+
+            <TextView
+                android:id="@+id/textj33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linebase18"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="60dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="나이">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/result39"
+                android:textSize="25dp"
+                android:textColor="#088A08"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="32dp"
+                android:layout_below="@+id/textj33"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/textj34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linebase18"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="확진자">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/result40"
+                android:textSize="25dp"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/textj34"
+                android:textStyle="bold"></TextView>
+
+
+            <TextView
+                android:id="@+id/textj35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linebase18"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="310dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="사망자">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/result41"
+                android:textSize="25dp"
+                android:textColor="#0054FF"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="305dp"
+                android:layout_below="@+id/textj35"
+                android:textStyle="bold"></TextView>
+
+            <View
+                android:id="@+id/linebase19"
+                android:layout_width="380dp"
+                android:layout_below="@id/result41"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_height="1.0dp"
+                android:background="#D9D9D9" />
+
+            <TextView
+                android:id="@+id/textj36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linebase19"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="60dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="나이">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/result42"
+                android:textSize="25dp"
+                android:textColor="#088A08"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="36dp"
+                android:layout_below="@+id/textj36"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/textj37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linebase19"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="확진자">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/result43"
+                android:textSize="25dp"
+                android:textColor="@android:color/holo_red_light"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/textj37"
+                android:textStyle="bold"></TextView>
+
+
+            <TextView
+                android:id="@+id/textj38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linebase19"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="310dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="사망자">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/result44"
+                android:textSize="25dp"
+                android:textColor="#0054FF"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="305dp"
+                android:layout_below="@+id/textj38"
+                android:textStyle="bold"></TextView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/result44"></Space>
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

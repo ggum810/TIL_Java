@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_graph"
+        android:title="코로나 현황" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_dia"
+        android:title="자가 진단" />
+
+    <item
+        android:id="@+id/navigation_notifications"
+        android:icon="@drawable/ic_siren"
+        android:title="감염병 위기경보 단계" />
+
+    <item
+        android:id="@+id/navigation_sym"
+        android:title="국민 행동수칙"
+        android:icon="@drawable/ic_sym"/>
+
+</menu>

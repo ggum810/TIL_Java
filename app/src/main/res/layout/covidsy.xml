@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:weightSum="10"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/covid1"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/covid1"/>
+
+    <Button
+        android:id="@+id/covid2"
+        android:layout_width="match_parent"
+        android:layout_height="230px"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="15dp"
+        android:adjustViewBounds="true"
+        android:layout_below="@+id/covid1"
+        android:background="@drawable/call"/>
+
+    <Button
+        android:id="@+id/covid3"
+        android:layout_width="match_parent"
+        android:layout_height="130px"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="15dp"
+        android:adjustViewBounds="true"
+        android:layout_below="@+id/covid2"
+        android:background="@drawable/call2"/>
+
+    <Space
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        ></Space>
+    </RelativeLayout>
+</ScrollView>
+
+</RelativeLayout>
